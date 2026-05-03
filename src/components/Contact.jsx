@@ -39,7 +39,7 @@ export default function Contact() {
           className="text-center"
         >
           <h2 className="section-title justify-center flex items-center gap-2">
-            <span className="text-primary">—</span> ติดต่อผม
+            <span className="text-primary">—</span> ติดต่อผม <span className="text-primary">—</span>
           </h2>
           <p className="section-subtitle">สนใจร่วมงานกัน? ติดต่อผมได้เลยครับ</p>
         </motion.div>

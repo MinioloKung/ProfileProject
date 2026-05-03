@@ -14,6 +14,15 @@ export default function Navbar() {
 
       // Detect active section
       const sections = navLinks.map((l) => l.href.substring(1));
+
+      // If scrolled to the bottom of the page, activate the last section
+      const isAtBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50;
+      if (isAtBottom) {
+        setActiveSection(`#${sections[sections.length - 1]}`);
+        return;
+      }
+
       for (let i = sections.length - 1; i >= 0; i--) {
         const el = document.getElementById(sections[i]);
         if (el && el.getBoundingClientRect().top <= 120) {
@@ -74,7 +83,7 @@ export default function Navbar() {
                 {activeSection === link.href && (
                   <motion.span
                     layoutId="nav-active"
-                    className="absolute bottom-0 left-1/2 -translate-x-1/2 w-5 h-0.5 bg-primary rounded-full"
+                    className="absolute bottom-0 left-0 w-full h-0.5 bg-primary rounded-full"
                     transition={{ type: "spring", stiffness: 400, damping: 30 }}
                   />
                 )}

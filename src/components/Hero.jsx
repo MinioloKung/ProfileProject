@@ -24,7 +24,7 @@ export default function Hero() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <motion.p
-              className="text-muted text-sm md:text-base tracking-widest uppercase mb-4 font-inter"
+              className="text-muted text-sm md:text-base tracking-widest uppercase mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
