@@ -53,8 +53,8 @@ export const projects = [
       "ระบบจองตั๋วคอนเสิร์ตออนไลน์แบบครบวงจร ที่พัฒนาขึ้นเพื่อให้ศิลปินอิสระสามารถจัดการการจองตั๋วได้ด้วยตนเอง ระบบรองรับการสร้างอีเวนต์ การเลือกที่นั่ง การชำระเงิน และการจัดการคำสั่งซื้อ พัฒนาด้วย React.js ฝั่ง Frontend, Node.js + Express.js ฝั่ง Backend และ MySQL เป็นฐานข้อมูล",
     tech: ["React.js", "Node.js", "Express.js", "MySQL", "Tailwind CSS"],
     github: "https://github.com/MinioloKung/ProjectConcert",
-    image: "/projects/concert.png",
-    gallery: ["/projects/concert.png", "/projects/concert_detail.png", "/projects/concert_checkout.png"],
+    image: "/projects/concert1.png",
+    gallery: ["/projects/concert1.png", "/projects/concert2.png", "/projects/concert3.png", "/projects/concert4.png", "/projects/concert5.png"],
     featured: true,
   },
   {
@@ -66,8 +66,8 @@ export const projects = [
       "โปรเจกต์ระหว่างฝึกงานที่ Dohome ในฝ่ายการตลาด Online Marketing ได้พัฒนาหน้าเว็บแคมเปญ Home Service แบบ Responsive Design จัดการโครงสร้าง CSS ด้วย CSS Variables เพื่อให้ดูแลง่าย ทำ Software Testing (UAT) และเขียน Defect logs นอกจากนี้ยังใช้ Generative AI (Copilot) ในการสร้างภาพสินค้ามากกว่า 2,000 ภาพ และศึกษาเรื่อง SEO ด้วย Ubersuggest",
     tech: ["HTML", "CSS", "JavaScript", "Generative AI", "Ubersuggest"],
     github: null,
-    image: "/projects/homeservice.png",
-    gallery: ["/projects/homeservice.png", "/projects/homeservice_form.png", "/projects/homeservice_gallery.png"],
+    image: "/projects/HomeService.jfif",
+    gallery: ["/projects/HomeService.jfif", "/projects/cssvar.jfif", "/projects/figma.jfif", "/projects/aigen1.jfif", "/projects/aigen2.jfif"],
     featured: true,
   },
   {
@@ -80,7 +80,7 @@ export const projects = [
     tech: ["Arduino", "C/C++", "IoT"],
     github: null,
     image: "/projects/smarttrash.png",
-    gallery: ["/projects/smarttrash.png", "/projects/smarttrash_circuit.png", "/projects/smarttrash_prototype.png"],
+    gallery: ["/projects/smarttrash.png", "/projects/smarttrash_circuit.png"],
     featured: false,
   },
 ];
