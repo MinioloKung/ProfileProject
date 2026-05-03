@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'Noto Sans Thai', 'Inter', sans-serif;
+  background-color: #141210;
+  color: #f5f0eb;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+/* ===== Custom Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1c1917;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a403a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c9a87c;
+}
+
+/* ===== Selection ===== */
+::selection {
+  background-color: rgba(201, 168, 124, 0.3);
+  color: #f5f0eb;
+}
+
+/* ===== Section Styles ===== */
+@layer components {
+  .section-container {
+    @apply max-w-6xl mx-auto px-6 py-20 md:py-28;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-warm-white mb-2 font-thai;
+  }
+
+  .section-subtitle {
+    @apply text-muted text-base md:text-lg mb-12;
+  }
+
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-md border border-border/50 rounded-2xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-bg font-semibold rounded-xl
+           hover:bg-primary-light transition-all duration-300 hover:shadow-lg hover:shadow-primary/20
+           hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-7 py-3.5 border-2 border-primary text-primary font-semibold rounded-xl
+           hover:bg-primary hover:text-bg transition-all duration-300 hover:shadow-lg hover:shadow-primary/20
+           hover:-translate-y-0.5 active:translate-y-0;
+  }
+}
+
+/* ===== Gradient Overlays ===== */
+.gradient-overlay {
+  background: radial-gradient(ellipse at 50% 0%, rgba(201, 168, 124, 0.08) 0%, transparent 60%);
+}
+
+.gradient-section {
+  background: linear-gradient(180deg, transparent 0%, rgba(201, 168, 124, 0.03) 50%, transparent 100%);
+}
