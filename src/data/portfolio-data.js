@@ -49,9 +49,12 @@ export const projects = [
     title: "Online Concert Ticket Booking System",
     description:
       "แอปพลิเคชันเว็บแบบครบวงจรสำหรับศิลปินอิสระในการจัดการการจองตั๋ว พัฒนาทั้ง Frontend และ Backend ครบวงจร",
+    longDescription:
+      "ระบบจองตั๋วคอนเสิร์ตออนไลน์แบบครบวงจร ที่พัฒนาขึ้นเพื่อให้ศิลปินอิสระสามารถจัดการการจองตั๋วได้ด้วยตนเอง ระบบรองรับการสร้างอีเวนต์ การเลือกที่นั่ง การชำระเงิน และการจัดการคำสั่งซื้อ พัฒนาด้วย React.js ฝั่ง Frontend, Node.js + Express.js ฝั่ง Backend และ MySQL เป็นฐานข้อมูล",
     tech: ["React.js", "Node.js", "Express.js", "MySQL", "Tailwind CSS"],
     github: "https://github.com/MinioloKung/ProjectConcert",
-    image: null, // จะใส่ทีหลัง
+    image: "/projects/concert.png",
+    gallery: ["/projects/concert.png", "/projects/concert_detail.png", "/projects/concert_checkout.png"],
     featured: true,
   },
   {
@@ -59,9 +62,12 @@ export const projects = [
     subtitle: "Dohome Internship",
     description:
       "พัฒนาหน้าเว็บแบบตอบสนองและบำรุงรักษาสถาปัตยกรรม CSS โดยใช้ตัวแปร CSS หาข้อมูลและเรียนรู้การทำงาน SEO ใช้ Generative AI (Copilot) ช่วยสร้างภาพสินค้ากว่า 2,000 ภาพ",
+    longDescription:
+      "โปรเจกต์ระหว่างฝึกงานที่ Dohome ในฝ่ายการตลาด Online Marketing ได้พัฒนาหน้าเว็บแคมเปญ Home Service แบบ Responsive Design จัดการโครงสร้าง CSS ด้วย CSS Variables เพื่อให้ดูแลง่าย ทำ Software Testing (UAT) และเขียน Defect logs นอกจากนี้ยังใช้ Generative AI (Copilot) ในการสร้างภาพสินค้ามากกว่า 2,000 ภาพ และศึกษาเรื่อง SEO ด้วย Ubersuggest",
     tech: ["HTML", "CSS", "JavaScript", "Generative AI", "Ubersuggest"],
     github: null,
-    image: null,
+    image: "/projects/homeservice.png",
+    gallery: ["/projects/homeservice.png", "/projects/homeservice_form.png", "/projects/homeservice_gallery.png"],
     featured: true,
   },
   {
@@ -69,9 +75,12 @@ export const projects = [
     subtitle: "IoT Project",
     description:
       "ถังขยะอัตโนมัติที่ควบคุมผ่านบลูทูธโดยใช้บอร์ด Arduino และเซ็นเซอร์ตรวจจับความเคลื่อนไหว",
+    longDescription:
+      "โปรเจกต์ IoT ที่พัฒนาถังขยะอัตโนมัติโดยใช้บอร์ด Arduino เป็นตัวควบคุมหลัก มีเซ็นเซอร์ตรวจจับความเคลื่อนไหวเพื่อเปิดฝาอัตโนมัติ สามารถควบคุมผ่านบลูทูธได้ เหมาะสำหรับการใช้งานในบ้านและสำนักงาน ช่วยเพิ่มความสะดวกและลดการสัมผัส",
     tech: ["Arduino", "C/C++", "IoT"],
     github: null,
-    image: null,
+    image: "/projects/smarttrash.png",
+    gallery: ["/projects/smarttrash.png", "/projects/smarttrash_circuit.png", "/projects/smarttrash_prototype.png"],
     featured: false,
   },
 ];
