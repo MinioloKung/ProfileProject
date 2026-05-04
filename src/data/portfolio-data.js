@@ -64,7 +64,7 @@ export const projects = [
     description:
       "พัฒนาหน้าเว็บแบบตอบสนองและบำรุงรักษาสถาปัตยกรรม CSS โดยใช้ตัวแปร CSS หาข้อมูลและเรียนรู้การทำงาน SEO ใช้ Generative AI (Copilot) ช่วยสร้างภาพสินค้ากว่า 2,000 ภาพ",
     longDescription:
-      "โปรเจกต์ระหว่างฝึกงานที่ Dohome ในฝ่ายการตลาด Online Marketing ได้พัฒนาหน้าเว็บแคมเปญ Home Service แบบ Responsive Design จัดการโครงสร้าง CSS ด้วย CSS Variables เพื่อให้ดูแลง่าย ทำ Software Testing (UAT) และเขียน Defect logs นอกจากนี้ยังใช้ Generative AI (Copilot) ในการสร้างภาพสินค้ามากกว่า 2,000 ภาพ และศึกษาเรื่อง SEO ด้วย Ubersuggest",
+      "โปรเจกต์ระหว่างฝึกงานที่ Dohome ในฝ่ายการตลาด Online Marketing ได้พัฒนาหน้าเว็บแคมเปญ Home Service แบบ Responsive Design จัดการโครงสร้าง CSS ด้วย CSS Variables เพื่อให้ดูแลง่าย ทำ Software Testing (UAT) และเขียน Defect logs เพื่อทดสอบระบบ CMS ของ Dohome นอกจากนี้ยังใช้ Generative AI (Copilot) ในการสร้างภาพสินค้ามากกว่า 2,000 ภาพ และศึกษาเรื่อง SEO ด้วย Ubersuggest",
     tech: ["HTML", "CSS", "JavaScript", "Generative AI", "Ubersuggest"],
     github: null,
     image: "/projects/HomeService.jfif",
@@ -109,12 +109,12 @@ export const experiences = [
     responsibilities: [
       "พัฒนา Responsive Web Pages สำหรับแคมเปญ Home Service",
       "จัดการโครงสร้าง CSS (DH.css) ด้วย CSS Variables",
-      "ทำ Software Testing (UAT/Defect logs)",
+      "ทำ Software Testing (UAT/Defect logs) ระบบ CMS ของบริษัท",
       "ใช้ Generative AI (Copilot) ช่วยสร้างภาพสินค้ากว่า 2,000 ภาพ",
     ],
   },
   {
-    company: "J.I.B. (MSI)",
+    company: "IT.CITY (MSI)",
     position: "IT Consultant (Part-time)",
     department: "",
     period: "2023 - 2024",
@@ -125,15 +125,28 @@ export const experiences = [
   },
 ];
 
-export const education = {
-  university: "มหาวิทยาลัยราชภัฏพระนคร",
-  universityEn: "Phranakhon Rajabhat University",
-  degree: "วิทยาศาสตรบัณฑิต (วท.บ.)",
-  major: "วิทยาการคอมพิวเตอร์",
-  majorEn: "Computer Science",
-  period: "2022 - 2026",
-  gpa: "3.08",
-};
+export const education = [
+  {
+    school: "มหาวิทยาลัยราชภัฏพระนคร",
+    schoolEn: "Phranakhon Rajabhat University",
+    degree: "วิทยาศาสตรบัณฑิต (วท.บ.)",
+    major: "วิทยาการคอมพิวเตอร์",
+    majorEn: "Computer Science",
+    period: "2022 - 2026",
+    gpa: "3.08",
+    icon: "🎓",
+  },
+  {
+    school: "โรงเรียนปทุมวิไล",
+    schoolEn: "Pathumwilai School",
+    degree: "มัธยมศึกษาตอนปลาย",
+    major: "ไทย-อังกฤษ-สังคม",
+    majorEn: "Thai-English-Social Studies",
+    period: "2019 - 2021",
+    gpa: "3.21",
+    icon: "🏫",
+  },
+];
 
 export const navLinks = [
   { label: "หน้าแรก", href: "#hero" },
