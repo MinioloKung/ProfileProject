@@ -3,7 +3,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { projects } from "../data/portfolio-data";
 import { FaGithub } from "react-icons/fa";
-import { HiEye } from "react-icons/hi";
+import { HiEye, HiExternalLink } from "react-icons/hi";
 import ProjectModal from "./ProjectModal";
 
 const gradients = [
@@ -94,6 +94,17 @@ export default function Projects() {
                         onClick={(e) => e.stopPropagation()}
                       >
                         <FaGithub /> GitHub
+                      </a>
+                    )}
+                    {p.demo && (
+                      <a
+                        href={p.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 text-primary text-sm font-medium rounded-lg hover:bg-primary/20 transition-all duration-300"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        <HiExternalLink /> Live Demo
                       </a>
                     )}
                   </div>

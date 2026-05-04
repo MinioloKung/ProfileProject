@@ -47,6 +47,7 @@ export const softSkills = ["Teamwork", "Problem Solving", "Fast Learner", "Easy 
 export const projects = [
   {
     title: "Online Concert Ticket Booking System",
+    subtitle: "Full Stack Final Project",
     description:
       "แอปพลิเคชันเว็บแบบครบวงจรสำหรับศิลปินอิสระในการจัดการการจองตั๋ว พัฒนาทั้ง Frontend และ Backend ครบวงจร",
     longDescription:
@@ -81,6 +82,20 @@ export const projects = [
     github: null,
     image: "/projects/smarttrash.png",
     gallery: ["/projects/smarttrash.png", "/projects/smarttrash_circuit.png"],
+    featured: false,
+  },
+  {
+    title: "พุทธปฏิทิน — วันสำคัญทางพระพุทธศาสนา",
+    subtitle: "Static Website",
+    description:
+      "เว็บเพจให้ความรู้เกี่ยวกับ วันสำคัญทางพระพุทธศาสนา ออกแบบให้ทันสมัย เรียบง่าย อ่านง่าย รองรับมือถือ ใช้ HTML/CSS/JavaScript + Bootstrap 5 เปิดได้ทันทีในเบราว์เซอร์ (ไม่ต้องใช้เซิร์ฟเวอร์/ฐานข้อมูล)",
+    longDescription:
+      "เว็บเพจให้ความรู้เกี่ยวกับ วันสำคัญทางพระพุทธศาสนา ออกแบบให้ทันสมัย เรียบง่าย อ่านง่าย รองรับมือถือ ใช้ HTML/CSS/JavaScript + Bootstrap 5 เปิดได้ทันทีในเบราว์เซอร์ (ไม่ต้องใช้เซิร์ฟเวอร์/ฐานข้อมูล)",
+    tech: ["HTML", "CSS", "JavaScript", "Bootstrap 5"],
+    github: "https://github.com/MinioloKung/buddhist-days-modern",
+    demo: "https://MinioloKung.github.io/buddhist-days-modern",
+    image: "/projects/bud1.png",
+    gallery: ["/projects/bud1.png", "/projects/bud2.png"],
     featured: false,
   },
 ];

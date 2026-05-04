@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { HiX, HiChevronLeft, HiChevronRight } from "react-icons/hi";
+import { HiX, HiChevronLeft, HiChevronRight, HiExternalLink } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 
 export default function ProjectModal({ project, isOpen, onClose }) {
@@ -213,24 +213,29 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                 </div>
 
                 {/* Actions */}
-                <div className="flex items-center gap-3 pt-2">
+                <div className="flex flex-wrap items-center gap-3 pt-2">
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary"
+                    >
+                      <HiExternalLink className="text-lg" />
+                      Live Demo
+                    </a>
+                  )}
                   {project.github && (
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn-primary"
+                      className={project.demo ? "btn-outline" : "btn-primary"}
                     >
                       <FaGithub className="text-lg" />
                       ดูโค้ดบน GitHub
                     </a>
                   )}
-                  <button
-                    onClick={onClose}
-                    className="btn-outline"
-                  >
-                    ปิด
-                  </button>
                 </div>
               </div>
             </div>
