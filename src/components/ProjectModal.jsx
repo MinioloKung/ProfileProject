@@ -214,17 +214,6 @@ export default function ProjectModal({ project, isOpen, onClose }) {
 
                 {/* Actions */}
                 <div className="flex flex-wrap items-center gap-3 pt-2">
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-primary"
-                    >
-                      <HiExternalLink className="text-lg" />
-                      Live Demo
-                    </a>
-                  )}
                   {project.github && (
                     <a
                       href={project.github}
@@ -234,6 +223,17 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                     >
                       <FaGithub className="text-lg" />
                       ดูโค้ดบน GitHub
+                    </a>
+                  )}
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary"
+                    >
+                      <HiExternalLink className="text-lg" />
+                      Live Demo
                     </a>
                   )}
                 </div>
