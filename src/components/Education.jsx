@@ -33,10 +33,17 @@ export default function Education() {
 
                 <div className="relative z-10">
                   <motion.div
-                    className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-2xl mb-6"
-                    whileHover={{ rotate: 10, scale: 1.1 }}
+                    className="inline-flex items-center justify-center w-24 h-24 mb-6"
                   >
-                    <span className="text-3xl">{edu.icon}</span>
+                    {edu.logo ? (
+                      <img
+                        src={edu.logo}
+                        alt={`${edu.schoolEn} logo`}
+                        className="w-full h-full object-contain"
+                      />
+                    ) : (
+                      <span className="text-3xl">{edu.icon}</span>
+                    )}
                   </motion.div>
 
                   <h3 className="text-2xl font-bold text-warm-white mb-1">{edu.school}</h3>

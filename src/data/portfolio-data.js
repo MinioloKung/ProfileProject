@@ -134,6 +134,7 @@ export const education = [
     majorEn: "Computer Science",
     period: "2022 - 2026",
     gpa: "3.08",
+    logo: "/projects/LogoPnru.png",
     icon: "🎓",
   },
   {
@@ -144,6 +145,7 @@ export const education = [
     majorEn: "Thai-English-Social Studies",
     period: "2019 - 2021",
     gpa: "3.21",
+    logo: "/projects/LogoPw.png",
     icon: "🏫",
   },
 ];
