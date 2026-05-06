@@ -15,7 +15,7 @@ export const personalInfo = {
   email: "jeffyfilm2kp@gmail.com",
   github: "https://github.com/MinioloKung",
   phone: "095-625-5093",
-  resumePath: "/Resume_Surachet_Developer.pdf",
+  resumePath: "/Resume_Surachet_Developer(new).pdf",
   profileImage: "/profile.png",
 };
 
@@ -72,6 +72,33 @@ export const projects = [
     featured: true,
   },
   {
+    title: "E-Commerce Website Mockup (Cosmetics)",
+    subtitle: "WordPress",
+    description:
+      "พัฒนาระบบร้านค้าออนไลน์แบบครบวงจรด้วย CMS ทดลองออกแบบ UI/UX สำหรับแบรนด์เครื่องสำอาง",
+    longDescription:
+      "พัฒนาระบบร้านค้าออนไลน์แบบครบวงจรด้วย CMS ทดลองออกแบบ UI/UX สำหรับแบรนด์เครื่องสำอาง และจัดการระบบหลังบ้าน (Backend) ครอบคลุมตั้งแต่หน้ารายการสินค้า (Shop), หน้าแสดงรายละเอียด (Product Details), ระบบตะกร้าสินค้า (Cart) ไปจนถึงหน้าชำระเงิน (Checkout)",
+    tech: ["WordPress", "WooCommerce", "CMS"],
+    github: null,
+    image: "/projects/press01.png",
+    gallery: ["/projects/press01.png", "/projects/press02.png", "/projects/press03.png", "/projects/press04.png", "/projects/press05.png"],
+    featured: true,
+  },
+  {
+    title: "Agency.AI - Modern Digital Agency Landing Page",
+    subtitle: "React Project",
+    description:
+      "พัฒนาหน้าเว็บไซต์ Landing Page สำหรับดิจิทัลเอเจนซี่ (Single Page Application) เพื่ออัปสกิลการเขียนโค้ดและอัปเกรดเทคโนโลยีการทำเว็บล่าสุด",
+    longDescription:
+      "พัฒนาหน้าเว็บไซต์ Landing Page สำหรับดิจิทัลเอเจนซี่ (Single Page Application) เพื่ออัปสกิลการเขียนโค้ดและอัปเกรดเทคโนโลยีการทำเว็บล่าสุด โปรเจกต์นี้เน้นการออกแบบส่วนติดต่อผู้ใช้งาน (UI) ที่สะอาดตา ทันสมัย และมอบประสบการณ์การใช้งาน (UX) ที่ลื่นไหลผ่านแอนิเมชัน ครอบคลุมตั้งแต่ Hero Section, การนำเสนอบริการ (Services), ไปจนถึงระบบติดต่อสอบถามที่ใช้งานได้จริง",
+    tech: ["React (Vite)", "Tailwind CSS v4", "Framer Motion", "Vercel"],
+    github: "https://github.com/MinioloKung/Agencyai.git",
+    demo: "https://agencyai-mu.vercel.app/",
+    image: "/projects/agency1.png",
+    gallery: ["/projects/agency1.png", "/projects/agency2.png", "/projects/agency3.png", "/projects/agency4.png", "/projects/agency5.png"],
+    featured: false,
+  },
+  {
     title: "Smart Trash Bin",
     subtitle: "IoT Project",
     description:
@@ -82,6 +109,19 @@ export const projects = [
     github: null,
     image: "/projects/smarttrash.png",
     gallery: ["/projects/smarttrash.png", "/projects/smarttrash_circuit.png"],
+    featured: false,
+  },
+  {
+    title: "UI/UX Design & Interactive Prototyping",
+    subtitle: "Figma Design",
+    description:
+      "รวบรวมผลงานการออกแบบส่วนติดต่อผู้ใช้งาน (UI) และประสบการณ์ผู้ใช้งาน (UX) สำหรับแพลตฟอร์มที่หลากหลาย ครอบคลุมตั้งแต่เว็บไซต์ E-Commerce, ระบบฟอร์มจัดการข้อมูล (Web Application)",
+    longDescription:
+      "รวบรวมผลงานการออกแบบส่วนติดต่อผู้ใช้งาน (UI) และประสบการณ์ผู้ใช้งาน (UX) สำหรับแพลตฟอร์มที่หลากหลาย ครอบคลุมตั้งแต่เว็บไซต์ E-Commerce, ระบบฟอร์มจัดการข้อมูล (Web Application) ไปจนถึงแอปพลิเคชันบนสมาร์ทโฟน โดยเน้นการจัดวาง Layout ที่สะอาดตา ทันสมัย (User-Friendly) และมีการทำ Interactive Prototype เพื่อจำลอง Flow การทำงานจริงก่อนเข้าสู่กระบวนการเขียนโค้ด",
+    tech: ["Figma"],
+    github: null,
+    image: "/projects/figma จองที่พัก.png",
+    gallery: ["/projects/figma จองที่พัก.png", "/projects/figmasiaminter.png", "/projects/figmaนายช่าง.png"],
     featured: false,
   },
   {
@@ -133,7 +173,7 @@ export const education = [
     major: "วิทยาการคอมพิวเตอร์",
     majorEn: "Computer Science",
     period: "2022 - 2026",
-    gpa: "3.08",
+    gpa: "3.11",
     logo: "/projects/LogoPnru.png",
     icon: "🎓",
   },
