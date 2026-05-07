@@ -23,22 +23,22 @@ export const skills = [
   {
     category: "Web Development",
     icon: "🌐",
-    items: ["HTML", "CSS", "CSS Variables", "Responsive Web Design", "JavaScript"],
+    items: ["HTML", "CSS", "CSS Variables", "Responsive Web Design", "JavaScript", "TypeScript", "PHP"],
   },
   {
     category: "Frameworks & Libraries",
     icon: "⚛️",
-    items: ["React.js", "Astro", "Node.js", "Express.js", "Bootstrap"],
+    items: ["React.js", "Astro", "Node.js", "Express.js", "Bootstrap", "Tailwind CSS"],
   },
   {
     category: "AI & Database",
     icon: "🤖",
-    items: ["Generative AI", "Prompt Engineering", "Claude Code", "MySQL", "Python", "C/C++"],
+    items: ["Generative AI", "Prompt Engineering", "Claude Code", "MySQL", "PostgreSQL", "Python", "C#/C++"],
   },
   {
     category: "Tools",
     icon: "🛠️",
-    items: ["VS Code", "Chrome DevTools", "Figma", "Canva", "Ubersuggest"],
+    items: ["VS Code", "Chrome DevTools", "Figma", "Canva", "Ubersuggest", "Arduino IDE", "WordPress", "Git / GitHub", "Draw.io"],
   },
 ];
 
