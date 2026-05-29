@@ -1,6 +1,72 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { skills, softSkills } from "../data/portfolio-data";
+import { 
+  SiHtml5, 
+  SiCss, 
+  SiJavascript, 
+  SiTypescript, 
+  SiPhp, 
+  SiReact, 
+  SiAstro, 
+  SiNodedotjs, 
+  SiExpress, 
+  SiBootstrap, 
+  SiTailwindcss, 
+  SiClaude, 
+  SiMysql, 
+  SiPostgresql, 
+  SiPython, 
+  SiCplusplus, 
+  SiGooglechrome, 
+  SiFigma, 
+  SiCanva, 
+  SiArduino, 
+  SiWordpress, 
+  SiGit, 
+  SiDiagramsdotnet 
+} from "react-icons/si";
+import { FaLaptopCode } from "react-icons/fa";
+import { TbVariable, TbBrain, TbMessageCode, TbBrandVscode, TbSeo } from "react-icons/tb";
+
+const skillIcons = {
+  // Web Development
+  "HTML": { icon: SiHtml5, color: "#e34c26" },
+  "CSS": { icon: SiCss, color: "#1572b6" },
+  "CSS Variables": { icon: TbVariable, color: "#c9a87c" },
+  "Responsive Web Design": { icon: FaLaptopCode, color: "#4caf50" },
+  "JavaScript": { icon: SiJavascript, color: "#f7df1e" },
+  "TypeScript": { icon: SiTypescript, color: "#3178c6" },
+  "PHP": { icon: SiPhp, color: "#777bb4" },
+
+  // Frameworks & Libraries
+  "React.js": { icon: SiReact, color: "#61dafb" },
+  "Astro": { icon: SiAstro, color: "#ff5d01" },
+  "Node.js": { icon: SiNodedotjs, color: "#339933" },
+  "Express.js": { icon: SiExpress, color: "#e8c99b" },
+  "Bootstrap": { icon: SiBootstrap, color: "#7952b3" },
+  "Tailwind CSS": { icon: SiTailwindcss, color: "#38bdf8" },
+
+  // AI & Database
+  "Generative AI": { icon: TbBrain, color: "#ff6b6b" },
+  "Prompt Engineering": { icon: TbMessageCode, color: "#c9a87c" },
+  "Claude Code": { icon: SiClaude, color: "#d97706" },
+  "MySQL": { icon: SiMysql, color: "#4479a1" },
+  "PostgreSQL": { icon: SiPostgresql, color: "#4169e1" },
+  "Python": { icon: SiPython, color: "#3776ab" },
+  "C#/C++": { icon: SiCplusplus, color: "#00599c" },
+
+  // Tools
+  "VS Code": { icon: TbBrandVscode, color: "#007acc" },
+  "Chrome DevTools": { icon: SiGooglechrome, color: "#4285f4" },
+  "Figma": { icon: SiFigma, color: "#f24e1e" },
+  "Canva": { icon: SiCanva, color: "#00c4cc" },
+  "Ubersuggest": { icon: TbSeo, color: "#ff6b2b" },
+  "Arduino IDE": { icon: SiArduino, color: "#00979d" },
+  "WordPress": { icon: SiWordpress, color: "#21759b" },
+  "Git / GitHub": { icon: SiGit, color: "#f05032" },
+  "Draw.io": { icon: SiDiagramsdotnet, color: "#f08024" }
+};
 
 export default function Skills() {
   const ref = useRef(null);
@@ -41,15 +107,26 @@ export default function Skills() {
 
               {/* Skill tags */}
               <div className="flex flex-wrap gap-2.5">
-                {group.items.map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-3.5 py-1.5 bg-bg/80 border border-border/60 text-warm-gray text-sm rounded-lg
-                               hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all duration-300 cursor-default"
-                  >
-                    {skill}
-                  </span>
-                ))}
+                {group.items.map((skill) => {
+                  const skillInfo = skillIcons[skill];
+                  const IconComponent = skillInfo?.icon;
+                  return (
+                    <span
+                      key={skill}
+                      className="px-3.5 py-1.5 bg-bg/80 border border-border/60 text-warm-gray text-sm rounded-lg
+                                 hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all duration-300 cursor-default
+                                 flex items-center gap-2 group/skill"
+                    >
+                      {IconComponent && (
+                        <IconComponent 
+                          style={{ color: skillInfo.color }}
+                          className="text-base opacity-75 group-hover/skill:opacity-100 group-hover/skill:scale-110 transition-all duration-300"
+                        />
+                      )}
+                      <span>{skill}</span>
+                    </span>
+                  );
+                })}
               </div>
             </motion.div>
           ))}
@@ -80,3 +157,4 @@ export default function Skills() {
     </section>
   );
 }
+
