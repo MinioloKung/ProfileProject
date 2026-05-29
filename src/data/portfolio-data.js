@@ -23,7 +23,7 @@ export const skills = [
   {
     category: "Web Development",
     icon: "🌐",
-    items: ["HTML", "CSS", "CSS Variables", "Responsive Web Design", "JavaScript", "TypeScript", "PHP"],
+    items: ["HTML", "CSS", "Responsive Web Design", "JavaScript", "TypeScript", "PHP"],
   },
   {
     category: "Frameworks & Libraries",
